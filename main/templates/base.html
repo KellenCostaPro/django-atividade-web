@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Meu Projeto Django{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>AULA PRÁTICA - Projeto Django</h1>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+        <img src="{% static 'img/sucesso.jpeg' %}" alt="Imagem de sucesso" class="centered-image">
+    </main>
+</body>
+</html>
